@@ -14,7 +14,7 @@ deploy:
     provider: elasticbeanstalk
     edge: true
     skip_cleanup: true # Prevents Travis deleting build output before it uploads to S3
-    region: "us-east-2"
+    region: us-east-2
     app: "docker-react"
     env: "DockerReact-env"
     bucket_name: "arn:aws:s3:::elasticbeanstalk-us-east-2-655925493749"
