@@ -9,4 +9,5 @@ RUN npm run build
 # The folder that we care about during the run phase is /app/build
 # Note that the nginx image will automatically start the nginx process
 FROM nginx
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
