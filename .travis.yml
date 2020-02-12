@@ -13,11 +13,11 @@ script:
 deploy:
     provider: elasticbeanstalk
     edge: true
-    region: "us-east-2"
-    app: "docker-react"
-    env: "DockerReact-env"
-    bucket_name: "arn:aws:s3:::elasticbeanstalk-us-east-2-655925493749"
-    bucket_path: "docker-react"
+    region: us-east-2
+    app: docker-react
+    env: DockerReact-env
+    bucket_name: arn:aws:s3:::elasticbeanstalk-us-east-2-655925493749
+    bucket_path: docker-react
     on:
         branch: master # This tells Travis to only deploy when we update the master branch
     access_key_id: $AWS_ACCESS_KEY
