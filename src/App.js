@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hi there!!! This text is auto-updating on save. : )
+          Hi there!!! This app is now running on AWS via elasticbeanstalk. : )
         </p>
         <a
           className="App-link"
