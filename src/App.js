@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hi there!!! This app is now running on AWS via elasticbeanstalk! : )
+          This version was checked into a feature branch and later merged to master.
         </p>
         <a
           className="App-link"
