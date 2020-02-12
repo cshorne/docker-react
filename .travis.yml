@@ -9,7 +9,7 @@ before_install:
 script:
     - docker run -e CI=true cshorne/docker-react npm run test
 
-# tell Travis CI to deploy to production using elasticbeanstalk service on AWS
+# Tell Travis CI to deploy to production using elasticbeanstalk service on AWS
 deploy:
     provider: elasticbeanstalk
     region: "us-east-2"
@@ -18,7 +18,7 @@ deploy:
     bucket_name: "arn:aws:s3:::elasticbeanstalk-us-east-2-655925493749"
     bucket_path: "docker-react"
     on:
-        branch: master # this tells Travis to only deploy when we update the master branch
+        branch: master # This tells Travis to only deploy when we update the master branch
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key:
         secure: "$AWS_SECRET_KEY"
