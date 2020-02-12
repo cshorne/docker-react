@@ -16,7 +16,7 @@ deploy:
     skip_cleanup: true # Prevents Travis deleting build output before it uploads to S3
     access_key_id: "AKIAZROBUX727LHJICNW"
     secret_access_key: $AWS_SECRET_KEY
-    region: us-east-2
+    region: 'us-east-2'
     app: "docker-react"
     env: "DockerReact-env"
     bucket_name: "arn:aws:s3:::elasticbeanstalk-us-east-2-655925493749"
