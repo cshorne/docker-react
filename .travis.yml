@@ -13,13 +13,12 @@ script:
 deploy:
     provider: elasticbeanstalk
     edge: true
-    skip_cleanup: true # Prevents Travis deleting build output before it uploads to S3
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     region: "us-east-2"
     app: "docker-react"
     env: "DockerReact-env"
-    bucket_name: "elasticbeanstalk-us-east-2-655925493749"
+    bucket: "elasticbeanstalk-us-east-2-655925493749"
     bucket_path: "docker-react"
     on:
         branch: master # This tells Travis to only deploy when we update the master branch
