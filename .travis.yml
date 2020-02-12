@@ -12,6 +12,7 @@ script:
 # Tell Travis CI to deploy to production using elasticbeanstalk service on AWS
 deploy:
     provider: elasticbeanstalk
+    edge: true
     region: "us-east-2"
     app: "docker-react"
     env: "DockerReact-env"
